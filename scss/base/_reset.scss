@@ -1,0 +1,15 @@
+/*reseteo de CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+    /* Declaro media query para diferentes tipos de dispositivos. */
+    @media only screen and (max-width: 370px) {
+      body {
+        font-size: 0.5em;
+      }
+    }
+  
+  /*fin de reseteo*/
