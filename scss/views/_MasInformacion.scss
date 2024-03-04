@@ -1,0 +1,47 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 3px;
+    flex-wrap: wrap;
+  }
+
+.fit-picture {
+        width: 96px;
+        height: 96px;
+        object-fit: cover; /* Ensures images fill the container while maintaining aspect ratio */
+        
+    }
+
+.iconosFooter{
+        display: flex;
+        justify-content: space-evenly;
+    }  
+
+.iconosFooter {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+    @media (max-width: 375px) {
+        .iconosFooter a {
+            width: 100%;
+            text-align: center;
+
+        header a {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+
+      }
+      
+
+
+
+
+

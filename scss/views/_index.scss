@@ -1,0 +1,99 @@
+
+
+.titulo {
+    @include flex-center;
+    color: $font-color-secondary;
+    font-size: 4rem;
+    font-style: bold;
+}
+
+footer {
+    .img-equal-size {
+        width: 96px;  
+        height: 96px; 
+    }
+    
+}
+
+#datosConsultorio {
+
+    
+    h2{
+        margin-left: map-get($margin-sizes, normal);
+        color: $font-color-primary;
+        font-size: 3rem;
+    }
+
+    h2:hover{
+        color: $font-color-secondary;
+        font-weight: bold ;
+    }
+
+    h3{
+        margin-left: map-get($margin-sizes, normal);
+        margin-bottom: map-get($margin-sizes, stretch);
+        color: $font-color-primary;
+        font-size: $font-size-primary;
+        
+    }
+
+    h4 {
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        color: #c6538c; 
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    li {
+        margin-bottom: map-get($margin-sizes, "very-stretch");
+        margin-left: map-get($margin-sizes, normal);
+        font-size: $font-size-secondary;
+        color: #333; 
+    }
+
+
+    
+
+}
+
+
+#plantelProfesional {
+  .row {
+    margin: 50px 0;
+  }
+
+  .professional-box {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: relative; /* Set relative positioning for .professional-info layering */
+
+    img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .professional-info {
+      position: absolute; /* Re-introduce absolute positioning for layering */
+      bottom: 0;
+      width: 100%; /* Set width to 100% to cover the entire image */
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      opacity: 0; /* Initially hidden */
+      transform: translateY(100%); /* Initially translated upwards */
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .professional-box:hover .professional-info {
+    opacity: 1; /* Become visible on hover */
+    transform: translateY(0); /* Slide down on hover */
+  }
+}
+
