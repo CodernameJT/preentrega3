@@ -13,69 +13,59 @@
 
 </head>
 <body>
-    <header>
-        <h1 class="titulo">CONSULTORIOS VILLURCA - Mas información</h1>    
+    <header class="d-flex justify-content-center align-items-center">
+        <h1 >CONSULTORIOS VILLURCA - Mas información</h1>
     </header>
-<main>
 
-    <section id="DondeEstamos">
-        <h2>Donde nos encontramos</h2>
-        <h3>Medios de transporte: Subte y colectivos varios</h3>
-        <iframe class="center-iframe carousel-margins" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.464566763602!2d-58.4822025!3d-34.5792517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb65d5cfce4f9%3A0x4a04266baf880e17!2sGINECOLOGIA+URQUIZA!5e0!3m2!1sen!2sar!4v1633024925771!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+    <main class="container">
 
-    <section id="NuestrasInstalaciones">
-        <h2 class="align-right">Nuestras instalaciones</h2>
-        <h3 class="align-right">cómodas para que esperar no sea desesperar</h3>
+        <section id="DondeEstamos">
+            <h2>Donde nos encontramos</h2>
+                <h3>Medios de transporte: Subte y colectivos varios</h3>
+                    <iframe class="center-iframe mx-auto d-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.464566763602!2d-58.4822025!3d-34.5792517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb65d5cfce4f9%3A0x4a04266baf880e17!2sGINECOLOGIA+URQUIZA!5e0!3m2!1sen!2sar!4v1633024925771!5m2!1sen!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
 
-        <div id="demo" class="carousel slide carousel-container" data-ride="carousel">
+        <section id="NuestrasInstalaciones">
+            <h2 class="align-right">Nuestras instalaciones</h2>
+            <h3 class="align-right">cómodas para que esperar no sea desesperar</h3>
+            <div id="demo" class="carousel slide carousel-container" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
 
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
-            
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/NuestrasInstalaciones-salaEspera.jpg" alt="Sala de espera" width="1100" height="500">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/NuestrasInstalaciones-salaEspera.jpg" alt="Sala de espera" width="100%" height="auto">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/NuestrasInstalaciones-salaEspera2.jpg" alt="Sillones comodos" width="100%" height="auto">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/NuestrasInstalaciones-salaEspera3.jpg" alt="Amplio espacio" width="100%" height="auto">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="../img/NuestrasInstalaciones-salaEspera2.jpg" alt="Sillones comodos" width="1100" height="500">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/NuestrasInstalaciones-salaEspera3.jpg" alt="amplio espacio" width="1100" height="500">
-                </div>
+
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
             </div>
-            
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-            
-        </div>
 
-    </section>
+        </section>
 
+    </main>
 
-</main>
-<footer>
-    <div class="d-flex">
-        <a href="../index.html"><img class="fit-picture" src="../img/Volvericon.png" alt="Pagina principal" />  
-        </a>
-        <a href="../pages/UnderConstruction.html">
-            <img class="fit-picture" src="../img/whatsapp.png" alt="contacto via WUP" />
-        </a>
-        <a href="../pages/UnderConstruction.html">
-            <img class="fit-picture" src="../img/calendar.png" alt="Agenda una visita" />
-        </a>
-    </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <footer class="iconosFooter d-flex justify-content-center">
+        <a href="../index.html"><img class="fit-picture" src="../img/Volvericon.png" alt="Pagina principal" /></a>
+        <a href="../pages/UnderConstruction.html"><img class="fit-picture" src="../img/whatsapp.png" alt="contacto via WUP" /></a>
+        <a href="../pages/UnderConstruction.html"><img class="fit-picture" src="../img/calendar.png" alt="Agenda una visita" /></a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

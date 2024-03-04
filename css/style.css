@@ -58,44 +58,69 @@ footer .img-equal-size {
 }
 
 #plantelProfesional .row {
-  margin: 150px 0;
+  margin: 50px 0;
 }
 #plantelProfesional .professional-box {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
-}
-#plantelProfesional .professional-box:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-#plantelProfesional .professional-box:hover .professional-info {
-  opacity: 1;
-  transform: translateY(0);
+  position: relative; /* Set relative positioning for .professional-info layering */
 }
 #plantelProfesional .professional-box img {
   width: 100%;
-  height: 200px;
+  height: 350px;
   object-fit: cover;
 }
 #plantelProfesional .professional-box .professional-info {
-  position: absolute;
+  position: absolute; /* Re-introduce absolute positioning for layering */
   bottom: 0;
-  width: 100%;
+  width: 100%; /* Set width to 100% to cover the entire image */
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8);
-  opacity: 0;
-  transform: translateY(100%);
+  opacity: 0; /* Initially hidden */
+  transform: translateY(100%); /* Initially translated upwards */
   transition: all 0.3s ease-in-out;
 }
-#plantelProfesional .professional-box .professional-info h5 {
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #f06292;
+#plantelProfesional .professional-box:hover .professional-info {
+  opacity: 1; /* Become visible on hover */
+  transform: translateY(0); /* Slide down on hover */
 }
-#plantelProfesional .professional-box .professional-info p {
-  font-size: 40px;
-  color: #424242;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 3px;
+  flex-wrap: wrap;
+}
+
+.fit-picture {
+  width: 96px;
+  height: 96px;
+  object-fit: cover; /* Ensures images fill the container while maintaining aspect ratio */
+}
+
+.iconosFooter {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.iconosFooter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 375px) {
+  .iconosFooter a {
+    width: 100%;
+    text-align: center;
+  }
+  .iconosFooter a header a {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
