@@ -1,4 +1,14 @@
-@import "./base/reset";
+//Se important variables generales que usaran componentes 
 @import "./utilities/variables";
-@import "./views/index";
+//se da reset al HTML
+@import "./base/reset";
+
+// Formateador de los diferentes componentes utilizados en el sitio
 @import "./utilities/mixins";
+
+// Vistas que le dan formato a todas las paginas del sitio. 
+@import "./views/index";
+@import "./views/MasInformacion";
+
+
+

@@ -3,19 +3,18 @@
 
 Grilla mejorada: se cambia estilo de conversión "auto" por valores em
 página +info: se modifica remplazando modelo bootstrap de slides a grilla con información "on hover"
-Son en total las 3 observaciones realizadas como mejoras a la primera entrega. 
+ 
 
 Se incorpora SASS como metodo de mejora de estilos. Esto se aplica solo a modo de aprendizaje ya que al ser un sitio informativo de solo dos páginas NO se justifica su uso. 
 
 == para 3 entrega (definiciones del profesor):
 = todo responsive (mobile + desktop)
 = SASS aplicado full en todo el sitio
-= Web + realistica respecto de la información
+
 = Uso de variables, mixins, extends y maps
 = NO es necesario bucles ni each
-= maquetado de la web usar bootstrap. 
 = Nesting y anidaciones
-= fijarse bien que se sube a Git. (usar .gitignore)
+= fijarse bien que se sube a Git. (usar .gitignore) que usemos el anterior preentrega2.
 
 
 
